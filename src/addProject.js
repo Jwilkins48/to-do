@@ -9,13 +9,7 @@ let loadProject = () => {
 
     let renderProject = (proj) => {
         const projItem = document.querySelector(`[data-key='${proj.id}']`);
-        if (projItem.deleted) {
-            //remove from DOM
-            item.remove();
-            if (projectList.length === 0) list.innerHTML = '';
-            return;
-        };
-
+        
         const projDisplay = document.createElement('div');
         projDisplay.setAttribute('data-key', proj.id);
         //Set content
@@ -40,6 +34,7 @@ let loadProject = () => {
         renderProject(newProject);
     };
 
+
     //Submit Project
     projectSubmitBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -52,16 +47,14 @@ let loadProject = () => {
         }
     });
 
-    //Display project modal
-    let showModal = () => {
-        projectForm.classList.add('active');
-    }
+
     let hideModal = () => {
         projectForm.classList.remove('active');
         console.log('hi');
     }
 
-    addNewProjectBtn.addEventListener('click', showModal());
-
+    addNewProjectBtn.addEventListener('click', () => {
+        projectForm.classList.add('active');
+    });
 }
 export default loadProject;

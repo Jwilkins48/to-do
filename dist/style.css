@@ -63,15 +63,15 @@ main {
     transform: scale(.98);
 }
 
-.projectForm{
+.projectForm {
+    position: absolute;
     top: -150%;
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
-    margin-top: 20px;
-    width: 630px; 
+    width: 630px;
     padding: 20px 30px;
-    background-color: #86e9ac;
+    background-color: #b3f1bd;
     color: #8378e2;
     border: solid 1px #1d723e;
     border-radius: 8px;
@@ -80,6 +80,7 @@ main {
         opacity 200ms ease-in-out 0ms,
         transform 20ms ease-in-out 0ms;
 }
+
 .projectForm.active {
     top: 50%;
     opacity: 1;
@@ -87,7 +88,9 @@ main {
     transition: top 0ms ease-in-out 0ms,
         opacity 200ms ease-in-out 0ms,
         transform 20ms ease-in-out 0ms;
+    margin-left: 10px ;
 }
+
 .projectFormContent{
     display: flex;
     flex-direction: column;

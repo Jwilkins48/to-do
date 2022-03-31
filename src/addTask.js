@@ -1,4 +1,5 @@
 let loadTask = () => {
+
     const list = document.querySelector('.js-todo-list');
 
     //Array for tasks
@@ -68,8 +69,8 @@ let loadTask = () => {
     }
 
     const form = document.querySelector('.js-form');
-    form.addEventListener('submit', event => {
-        event.preventDefault();
+    form.addEventListener('submit', e => {
+        e.preventDefault();
         const input = document.querySelector('.js-todo-input');
 
         const text = input.value.trim();
