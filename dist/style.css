@@ -63,6 +63,70 @@ main {
     transform: scale(.98);
 }
 
+.projectForm{
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    margin-top: 20px;
+    width: 630px; 
+    padding: 20px 30px;
+    background-color: #86e9ac;
+    color: #8378e2;
+    border: solid 1px #1d723e;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+.projectForm.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+.projectFormContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formHeading{
+    text-align: center;
+    margin-bottom: 8px;
+}
+#projectName{
+    font-size: 14px;
+    text-align: center;
+    width: 450px;
+    
+}
+.projectBtnContainer{
+    display: flex;
+    gap: 20px;
+}
+.projectBtn{
+    background-color: #a098e2;
+    width: 150px;
+    height: 40px;
+    padding: 6px;
+    border: 1px solid #372ab1;
+    border-radius: 4px;
+    margin-top: 18px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.projectBtn:hover{
+    cursor: pointer;
+    background-color: #b97ddb;
+}
+.projectBtn:active{
+    transform: scale(.98);
+}
+
 .content {
     width: 100%;
     max-width: 650px;

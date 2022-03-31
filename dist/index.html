@@ -27,6 +27,7 @@
         <div class="buttonDiv">
           <button id="addNewProjectBtn">Add Project <i class="fa-solid fa-plus"></i></button>
         </div>
+        <div id="projectDisplayContainer"></div>
       </div>
       <div class="content">
         <h1 class="app-title">Project</h1>
@@ -36,7 +37,21 @@
           <input autofocus type="text" aria-label="Enter a new todo item" placeholder="E.g. Build a web app"
             class="js-todo-input">
         </form>
+
+        <!-- Project Name Form -->
+        <div id="projectForm" class="projectForm">
+          <div class="projectFormContent">
+            <h1 class="formHeading">Name Your Project</h1>
+            <input autocomplete="off" type="text" id="projectName" placeholder="Project name">
+            <div class="projectBtnContainer">
+              <button type="button" id="projectCloseBtn" class="projectBtn close">Close</button>
+              <button type="button" id="projectSubmitBtn" class="projectBtn add">Add</button>
+            </div>
+      
+          </div>
+        </div>
       </div>
+        
     </main>
 
 

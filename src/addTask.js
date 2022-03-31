@@ -5,6 +5,7 @@ let loadTask = () => {
     let todoItems = [];
 
     let renderTodo = (todo) => {
+        //Place items in local storage
         localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
         //select current todo in DOM
         const item = document.querySelector(`[data-key='${todo.id}']`);
@@ -28,7 +29,7 @@ let loadTask = () => {
         <button class="delete-todo js-delete-todo">
         <svg><use href="#delete-icon"></use></svg>
         </button>`;
-        //Append list if it doesn't exist
+        //Append list if it doesn't already exist
         if (item) {
             //replace if not
             list.replaceChild(node, item);
