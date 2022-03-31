@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #8479E1;
+    overflow: hidden;
+}
+
+header {
+    background-color: #756cc9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sideBar {
+    background-color: #7d73d8;
+    border: 2px solid #36ad64;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.sideBar h1{
+    color: #d4d1d4;
+    text-align: center;
+    margin: 15px 0 10px 0;
+    font-size: 2.3rem;
+}
+
+.buttonDiv{
+    text-align: center;
+}
+.buttonDiv button{
+    padding: 8px;
+    width: 113px;
+    height: 39px;
+    margin: 6px;
+    border: 1px solid #167a3c;
+    background-color: #86e9ac;
+    border-radius: 8px;
+    color: #372ab1;
+    font-weight: 500;
+}
+.buttonDiv button:hover{
+    background-color: #95eeb7;
+    cursor: pointer;
+    transform: scale(.98);
+}
+
+.content {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 13%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    height: 90vh;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    overflow-y: auto;
+}
+
+.app-title {
+    text-align: center;
+    font-size: 80px;
+    opacity: 0.6;
+    color: #ffffff;
+}
+
+svg {
+    width: 60px;
+    height: 60px;
+    color: purple;
+}
+
+.todo-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-item span {
+    flex-grow: 1;
+    margin: 10px 5px;
+    font-size: 25px;
+    color: #e6e0e0;
+}
+
+.done span {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.tick {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #2dc266;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tick::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+}
+
+.done .tick::before {
+    display: inline;
+}
+
+.delete-todo {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-todo svg {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: 2px solid rgb(177, 176, 176);
+    outline: none;
+}
