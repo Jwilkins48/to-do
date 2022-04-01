@@ -26,7 +26,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3.5fr;
 }
 
 .sideBar {
@@ -56,6 +56,7 @@ main {
     border-radius: 8px;
     color: #372ab1;
     font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .buttonDiv button:hover{
     background-color: #95eeb7;
@@ -128,6 +129,28 @@ main {
 }
 .projectBtn:active{
     transform: scale(.98);
+}
+
+.projDisplay{
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #86e9ac;
+    border: 1px solid #0a2012;
+    border-radius: 6px;
+    color: #372ab1;
+    width: 350px;
+    margin: 18px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.delete-proj{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.delete-proj:hover{
+    color: #f01717;
 }
 
 .content {
